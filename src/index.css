@@ -1,25 +1,37 @@
-/* Background & layout */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
 body {
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
+  font-family: 'Comic Neue', cursive;
+  background: url('/study-guide-generator.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: #222;
-  background: linear-gradient(to bottom right, #f5faff, #e7f0fd);
 }
 
 .app-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1000px;
+  margin: 3rem auto;
   padding: 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-top: 8px solid black;
 }
 
-/* Header */
 h1 {
+  color: black;
   text-align: center;
   margin-bottom: 2rem;
 }
 
-/* Form */
+h2 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -33,14 +45,14 @@ input[type="text"] {
   max-width: 500px;
   padding: 0.6rem 1rem;
   font-size: 1rem;
-  border: 1px solid #ccc;
+  border: 2px solid black;
   border-radius: 6px;
 }
 
 button {
   padding: 0.6rem 1.5rem;
   font-size: 1rem;
-  background-color: #2d72d9;
+  background-color: black;
   color: white;
   border: none;
   border-radius: 6px;
@@ -49,10 +61,9 @@ button {
 }
 
 button:hover {
-  background-color: #1a4fad;
+  background-color: darkgray
 }
 
-/* Two-column layout */
 .content {
   display: flex;
   gap: 2rem;
@@ -69,29 +80,29 @@ button:hover {
   min-width: 30%;
 }
 
-/* Box styles */
-.study-guide,
-.wikipedia-summary {
-  border: 1px solid #ccc;
-  padding: 1.5rem;
+.study-guide {
+  border-left: 6px solid black;
   border-radius: 10px;
+  padding: 1.5rem;
   background: #ffffff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   line-height: 1.6;
 }
 
-h2 {
-  font-size: 1.2rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
+.wikipedia-summary {
+  border-left: 6px solid black;
+  border-radius: 10px;
+  padding: 1.5rem;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  line-height: 1.6;
 }
 
-/* Loading spinner */
 .loading-spinner {
   text-align: center;
   font-size: 1.2rem;
   margin-top: 3rem;
-  color: #2d72d9;
+  color: black;
   animation: pulse 1s infinite;
 }
 
@@ -101,7 +112,6 @@ h2 {
   100% { opacity: 0.4; }
 }
 
-/* Responsive */
 @media screen and (max-width: 768px) {
   .content {
     flex-direction: column;
