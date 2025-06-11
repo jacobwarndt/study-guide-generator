@@ -1,12 +1,28 @@
-# React + Vite
+# Study Guide Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web app that generates beginner friendly study guides and quick summaries for any topic using AI and open data.
 
-Currently, two official plugins are available:
+Enter a topic and receive:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- A custom **study guide** generated using the OpenAI API
+- A short **Wikipedia summary** for quick reference
 
-## Expanding the ESLint configuration
+This project was created as part of my apprenticeship with Creating Coding Careers and continues to evolve as I grow in my development journey.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Features
+
+- AI-generated study guides tailored to your topic
+- Wikipedia summary integration for extra context
+- Loading indicator while the guide is generated
+- Clean, responsive UI with a modern, school-inspired design
+- Fully client-side app built with modern tooling
+
+# Tech Stack
+
+- **Frontend**: React + Vite
+- **APIs**:
+  - OpenAI API
+  - Wikipedia REST API
+- **Styling**: Custom CSS
+- **Font**: Comic Neue
+- **Image Source**: Unsplash
